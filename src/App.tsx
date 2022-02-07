@@ -3,12 +3,12 @@ import TwitterAccountLookup from './TwitterAccountLookup';
 import './App.css';
 
 function App() {
-  const [twitterUserLookup, setTwitterUserLookup] = useState('');
+  const [twitterUserId, setTwitterUserId] = useState(-1);
 
   return (
     <div className='container my-4'>
       <h1>Twitter to Spotify</h1>
-      <TwitterAccountLookup />
+      <TwitterAccountLookup setTwitterUserId={setTwitterUserId} />
     </div>
   );
 }
